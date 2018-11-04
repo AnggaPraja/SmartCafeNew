@@ -5,6 +5,11 @@ body, html {
     color: #777;
   }
   
+  .bg-image-responsive{
+      height:auto !important;
+    max-height: none;
+}
+
   .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
     opacity: 0.65;
