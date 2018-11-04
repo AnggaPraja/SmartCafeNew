@@ -29,7 +29,7 @@ $this->title = 'Stok Tersedia';
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <table id="datatables" class="table table-striped table-no-bordered table-hover dataTable dtr-inline" cellspacing="0" width="100%"
+                                <table id="stok" class="table table-striped table-no-bordered table-hover dataTable dtr-inline" cellspacing="0" width="100%"
                                     style="width: 100%;" role="grid" aria-describedby="datatables_info">
                                     <thead>
                                         <tr role="row">
@@ -48,6 +48,114 @@ $this->title = 'Stok Tersedia';
                                         </tr>
                                     </tfoot>
                                     <tbody>
+                                        <tr role="row" class="odd">
+                                            <td tabindex="0" class="sorting_1">
+                                                <span class="badge badge-pill badge-success">Tersedia</span>
+                                            </td>
+                                            <td>Capucinno</td>
+                                            <td>Coffe</td>
+                                            <td class="text-right">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="" checked="">
+                                                        <span class="form-check-sign" style="top: 0px;">
+                                                            <span class="check"></span>
+                                                        </span>
+                                                        Tersedia
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td tabindex="0" class="sorting_1">
+                                                <span class="badge badge-pill badge-danger">Stok Habis</span>
+                                            </td>
+                                            <td>Moccacino</td>
+                                            <td>Coffe</td>
+                                            <td class="text-right">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                        <span class="form-check-sign" style="top: 0px;">
+                                                            <span class="check"></span>
+                                                        </span>
+                                                        Tersedia
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td tabindex="0" class="sorting_1">
+                                                <span class="badge badge-pill badge-success">Tersedia</span>
+                                            </td>
+                                            <td>Nasi Goreng</td>
+                                            <td>Makanan</td>
+                                            <td class="text-right">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="" checked="">
+                                                        <span class="form-check-sign" style="top: 0px;">
+                                                            <span class="check"></span>
+                                                        </span>
+                                                        Tersedia
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td tabindex="0" class="sorting_1">
+                                                <span class="badge badge-pill badge-success">Tersedia</span>
+                                            </td>
+                                            <td>Capucinno</td>
+                                            <td>Coffe</td>
+                                            <td class="text-right">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="" checked="">
+                                                        <span class="form-check-sign" style="top: 0px;">
+                                                            <span class="check"></span>
+                                                        </span>
+                                                        Tersedia
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td tabindex="0" class="sorting_1">
+                                                <span class="badge badge-pill badge-danger">Stok Habis</span>
+                                            </td>
+                                            <td>Moccacino</td>
+                                            <td>Coffe</td>
+                                            <td class="text-right">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="">
+                                                        <span class="form-check-sign" style="top: 0px;">
+                                                            <span class="check"></span>
+                                                        </span>
+                                                        Tersedia
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                            <td tabindex="0" class="sorting_1">
+                                                <span class="badge badge-pill badge-success">Tersedia</span>
+                                            </td>
+                                            <td>Nasi Goreng</td>
+                                            <td>Makanan</td>
+                                            <td class="text-right">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" value="" checked="">
+                                                        <span class="form-check-sign" style="top: 0px;">
+                                                            <span class="check"></span>
+                                                        </span>
+                                                        Tersedia
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
                                         <tr role="row" class="odd">
                                             <td tabindex="0" class="sorting_1">
                                                 <span class="badge badge-pill badge-success">Tersedia</span>

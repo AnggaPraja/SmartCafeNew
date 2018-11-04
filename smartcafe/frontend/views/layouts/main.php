@@ -38,7 +38,7 @@ if (class_exists('yii\debug\Module')) {
 
 
 
-            <a class="navbar-brand" href="#pablo">Penjual - <?=Yii::$app->user->identity->nama?></a>
+            <a class="navbar-brand" href="#">Penjual - <?=Yii::$app->user->identity->nama?></a>
         </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false"
@@ -53,6 +53,12 @@ if (class_exists('yii\debug\Module')) {
 
 
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="<?=Url::to(['site/memproses'])?>" class="nav-link">
+                        <i class="material-icons">warning</i>
+                        Memproses Pemesanan
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="<?=Url::to(['site/index'])?>" class="nav-link">
                         <i class="material-icons">check</i>
@@ -80,7 +86,7 @@ if (class_exists('yii\debug\Module')) {
 <div class="wrapper wrapper-full-page">
 
     <div class="page-header register-page header-filter" filter-color="black" style="background-image: url('<?= Yii::$app->request->baseUrl?>/img/bg.jpg')">
-        <div class="container" style="padding-top:0;">
+        <div class="container">
             <?=$content?>
         </div>
     </div>
@@ -90,39 +96,64 @@ if (class_exists('yii\debug\Module')) {
 
 <script>
     $(document).ready(function () {
-        $('#datatables').DataTable({
-            "pagingType": "full_numbers",
-            "lengthMenu": [
-                [10, 25, 50, -1],
-                [10, 25, 50, "All"]
-            ],
-            responsive: true,
-            language: {
-                search: "_INPUT_",
-                searchPlaceholder: "Search records",
-            }
+        // $('.navbar-brand').on('click',function(){
+        //   //alert("hai");
+        //   $.ajax({
+        //      url: '<?=Yii::$app->request->baseUrl. '/site/ajax'?>',
+        //      success: function (data) {
+        //   	  console.log(data);
+        //      }
+        //   });
+        // });
+        // var tb_validasi = $('#tb_validasi').DataTable({
+        //   "ajax":"<?=Yii::$app->request->baseUrl. '/site/ajax'?>"
+        // });
+        // setInterval( function () {
+        //     tb_validasi.ajax.reload();
+        // }, 10000 );
+        var tb_validasi = $('#tb_validasi').DataTable({
+          "order":[[1,"desc"]]
         });
-
-        var table = $('#datatable').DataTable();
-
-        // Edit record
-        table.on('click', '.edit', function () {
-            $tr = $(this).closest('tr');
-            var data = table.row($tr).data();
-            alert('You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.');
+        var tb_memproses = $('#tb_memproses').DataTable({
+          "order":[[1,"asc"]],
+          "paging":false
         });
-
-        // Delete a record
-        table.on('click', '.remove', function (e) {
-            $tr = $(this).closest('tr');
-            table.row($tr).remove().draw();
-            e.preventDefault();
+        var stok = $('#stok').DataTable({
+          // "order":[[1,"asc"]]
         });
-
-        //Like record
-        table.on('click', '.like', function () {
-            alert('You clicked on Like button');
-        });
+        // $('#datatables').DataTable({
+        //     "pagingType": "full_numbers",
+        //     "lengthMenu": [
+        //         [10, 25, 50, -1],
+        //         [10, 25, 50, "All"]
+        //     ],
+        //     responsive: true,
+        //     language: {
+        //         search: "_INPUT_",
+        //         searchPlaceholder: "Search records",
+        //     }
+        // });
+        //
+        // var table = $('#datatable').DataTable();
+        //
+        // // Edit record
+        // table.on('click', '.edit', function () {
+        //     $tr = $(this).closest('tr');
+        //     var data = table.row($tr).data();
+        //     alert('You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.');
+        // });
+        //
+        // // Delete a record
+        // table.on('click', '.remove', function (e) {
+        //     $tr = $(this).closest('tr');
+        //     table.row($tr).remove().draw();
+        //     e.preventDefault();
+        // });
+        //
+        // //Like record
+        // table.on('click', '.like', function () {
+        //     alert('You clicked on Like button');
+        // });
     });
 </script>
 <script>

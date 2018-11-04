@@ -28,7 +28,7 @@ $this->title = 'Validasi Pemsesanan';
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <table id="tb_validasi" class="table table-striped table-no-bordered table-hover dataTable dtr-inline" cellspacing="0" width="100%"
+                                <table id="tb_memproses" class="table table-striped table-no-bordered table-hover dataTable dtr-inline" cellspacing="0" width="100%"
                                     style="width: 100%;" role="grid" aria-describedby="datatables_info">
                                     <thead>
                                         <tr role="row">
@@ -39,6 +39,8 @@ $this->title = 'Validasi Pemsesanan';
                                             <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 20%;">Pesanan</th>
                                             <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 10%;">Kuantitas</th>
                                             <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 20%;">Username</th>
+                                            <th class="disabled-sorting sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 10%;"
+                                                aria-label="Actions: activate to sort column ascending">Actions</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -48,62 +50,111 @@ $this->title = 'Validasi Pemsesanan';
                                             <th rowspan="1" colspan="1">Pesanan</th>
                                             <th rowspan="1" colspan="1">Kuantitas</th>
                                             <th rowspan="1" colspan="1">Username</th>
+                                            <th rowspan="1" colspan="1">Actions</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr role="row" class="odd">
                                             <td tabindex="0" class="sorting_1">
-                                                <span class="badge badge-pill badge-success">Completed</span>
+                                                <span class="badge badge-pill badge-warning">Pending</span>
                                             </td>
                                             <td>2018/11/28</td>
                                             <td>Capucinno</td>
                                             <td>3</td>
                                             <td>kaharudin</td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-link btn-success btn-just-icon like">
+                                                    <i class="material-icons">check_circle_outline</i>
+                                                </a>
+                                                <a href="#" class="btn btn-link btn-danger btn-just-icon remove">
+                                                    <i class="material-icons">close</i>
+                                                </a>
+                                            </td>
                                         </tr>
                                         <tr role="row" class="odd">
                                             <td tabindex="0" class="sorting_1">
-                                                <span class="badge badge-pill badge-success">Completed</span>
+                                                <span class="badge badge-pill badge-warning">Pending</span>
                                             </td>
                                             <td>2018/11/2</td>
                                             <td>Nasi Goreng</td>
                                             <td>1</td>
                                             <td>triambudi</td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-link btn-success btn-just-icon like">
+                                                    <i class="material-icons">check_circle_outline</i>
+                                                </a>
+                                                <a href="#" class="btn btn-link btn-danger btn-just-icon remove">
+                                                    <i class="material-icons">close</i>
+                                                </a>
+                                            </td>
                                         </tr>
                                         <tr role="row" class="odd">
                                             <td tabindex="0" class="sorting_1">
-                                                <span class="badge badge-pill badge-danger">Canceled</span>
+                                                <span class="badge badge-pill badge-warning">Pending</span>
                                             </td>
                                             <td>2018/11/8</td>
                                             <td>Mocaccino</td>
                                             <td>2</td>
                                             <td>udin123</td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-link btn-success btn-just-icon like">
+                                                    <i class="material-icons">check_circle_outline</i>
+                                                </a>
+                                                <a href="#" class="btn btn-link btn-danger btn-just-icon remove">
+                                                    <i class="material-icons">close</i>
+                                                </a>
+                                            </td>
                                         </tr>
                                         <tr role="row" class="odd">
                                             <td tabindex="0" class="sorting_1">
-                                                <span class="badge badge-pill badge-success">Completed</span>
+                                                <span class="badge badge-pill badge-warning">Pending</span>
                                             </td>
                                             <td>2018/11/28</td>
                                             <td>Capucinno</td>
                                             <td>3</td>
                                             <td>kaharudin</td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-link btn-success btn-just-icon like">
+                                                    <i class="material-icons">check_circle_outline</i>
+                                                </a>
+                                                <a href="#" class="btn btn-link btn-danger btn-just-icon remove">
+                                                    <i class="material-icons">close</i>
+                                                </a>
+                                            </td>
                                         </tr>
                                         <tr role="row" class="odd">
                                             <td tabindex="0" class="sorting_1">
-                                                <span class="badge badge-pill badge-success">Completed</span>
+                                                <span class="badge badge-pill badge-warning">Pending</span>
                                             </td>
                                             <td>2018/11/2</td>
                                             <td>Nasi Goreng</td>
                                             <td>1</td>
                                             <td>triambudi</td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-link btn-success btn-just-icon like">
+                                                    <i class="material-icons">check_circle_outline</i>
+                                                </a>
+                                                <a href="#" class="btn btn-link btn-danger btn-just-icon remove">
+                                                    <i class="material-icons">close</i>
+                                                </a>
+                                            </td>
                                         </tr>
                                         <tr role="row" class="odd">
                                             <td tabindex="0" class="sorting_1">
-                                                <span class="badge badge-pill badge-danger">Canceled</span>
+                                                <span class="badge badge-pill badge-warning">Pending</span>
                                             </td>
                                             <td>2018/11/8</td>
                                             <td>Mocaccino</td>
                                             <td>2</td>
                                             <td>udin123</td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-link btn-success btn-just-icon like">
+                                                    <i class="material-icons">check_circle_outline</i>
+                                                </a>
+                                                <a href="#" class="btn btn-link btn-danger btn-just-icon remove">
+                                                    <i class="material-icons">close</i>
+                                                </a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>

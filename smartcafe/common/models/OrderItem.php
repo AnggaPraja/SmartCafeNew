@@ -11,6 +11,7 @@ use Yii;
  * @property int $qty
  * @property int $order_idorder
  * @property int $menu_idmenu
+ * @property int $status
  *
  * @property Menu $menuIdmenu
  * @property Order $orderIdorder
@@ -31,8 +32,8 @@ class OrderItem extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['qty', 'order_idorder', 'menu_idmenu'], 'integer'],
-            [['order_idorder', 'menu_idmenu'], 'required'],
+            [['qty', 'order_idorder', 'menu_idmenu', 'status'], 'integer'],
+            [['order_idorder', 'menu_idmenu', 'status'], 'required'],
             [['menu_idmenu'], 'exist', 'skipOnError' => true, 'targetClass' => Menu::className(), 'targetAttribute' => ['menu_idmenu' => 'idmenu']],
             [['order_idorder'], 'exist', 'skipOnError' => true, 'targetClass' => Order::className(), 'targetAttribute' => ['order_idorder' => 'idorder']],
         ];
@@ -48,6 +49,7 @@ class OrderItem extends \yii\db\ActiveRecord
             'qty' => 'Qty',
             'order_idorder' => 'Order Idorder',
             'menu_idmenu' => 'Menu Idmenu',
+            'status' => 'Status',
         ];
     }
 

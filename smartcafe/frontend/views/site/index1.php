@@ -32,13 +32,14 @@ $this->title = 'Validasi Pemsesanan';
                                     style="width: 100%;" role="grid" aria-describedby="datatables_info">
                                     <thead>
                                         <tr role="row">
-                                            <!-- <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 20%;" aria-sort="ascending"
-                                                aria-label="Name: activate to sort column descending">Status</th> -->
-                                            <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 20%;">Status</th>
+                                            <th class="sorting_asc" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 20%;" aria-sort="ascending"
+                                                aria-label="Name: activate to sort column descending">Status</th>
                                             <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 20%;">Tanggal</th>
                                             <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 20%;">Pesanan</th>
                                             <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 10%;">Kuantitas</th>
-                                            <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 20%;">Username</th>
+                                            <th class="sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 10%;">Username</th>
+                                            <th class="disabled-sorting text-center sorting" tabindex="0" aria-controls="datatables" rowspan="1" colspan="1" style="width: 20%;"
+                                                aria-label="Actions: activate to sort column ascending">Actions</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -48,6 +49,7 @@ $this->title = 'Validasi Pemsesanan';
                                             <th rowspan="1" colspan="1">Pesanan</th>
                                             <th rowspan="1" colspan="1">Kuantitas</th>
                                             <th rowspan="1" colspan="1">Username</th>
+                                            <th class="text-right" rowspan="1" colspan="1">Actions</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>
@@ -59,6 +61,14 @@ $this->title = 'Validasi Pemsesanan';
                                             <td>Capucinno</td>
                                             <td>3</td>
                                             <td>kaharudin</td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-link btn-success btn-just-icon like">
+                                                    <i class="material-icons">check_circle_outline</i>
+                                                </a>
+                                                <a href="#" class="btn btn-link btn-danger btn-just-icon remove">
+                                                    <i class="material-icons">close</i>
+                                                </a>
+                                            </td>
                                         </tr>
                                         <tr role="row" class="odd">
                                             <td tabindex="0" class="sorting_1">
@@ -68,6 +78,14 @@ $this->title = 'Validasi Pemsesanan';
                                             <td>Nasi Goreng</td>
                                             <td>1</td>
                                             <td>triambudi</td>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-link btn-success btn-just-icon like">
+                                                    <i class="material-icons">check_circle_outline</i>
+                                                </a>
+                                                <a href="#" class="btn btn-link btn-danger btn-just-icon remove">
+                                                    <i class="material-icons">close</i>
+                                                </a>
+                                            </td>
                                         </tr>
                                         <tr role="row" class="odd">
                                             <td tabindex="0" class="sorting_1">
@@ -77,33 +95,14 @@ $this->title = 'Validasi Pemsesanan';
                                             <td>Mocaccino</td>
                                             <td>2</td>
                                             <td>udin123</td>
-                                        </tr>
-                                        <tr role="row" class="odd">
-                                            <td tabindex="0" class="sorting_1">
-                                                <span class="badge badge-pill badge-success">Completed</span>
+                                            <td class="text-right">
+                                                <a href="#" class="btn btn-link btn-success btn-just-icon like">
+                                                    <i class="material-icons">check_circle_outline</i>
+                                                </a>
+                                                <a href="#" class="btn btn-link btn-danger btn-just-icon remove">
+                                                    <i class="material-icons">close</i>
+                                                </a>
                                             </td>
-                                            <td>2018/11/28</td>
-                                            <td>Capucinno</td>
-                                            <td>3</td>
-                                            <td>kaharudin</td>
-                                        </tr>
-                                        <tr role="row" class="odd">
-                                            <td tabindex="0" class="sorting_1">
-                                                <span class="badge badge-pill badge-success">Completed</span>
-                                            </td>
-                                            <td>2018/11/2</td>
-                                            <td>Nasi Goreng</td>
-                                            <td>1</td>
-                                            <td>triambudi</td>
-                                        </tr>
-                                        <tr role="row" class="odd">
-                                            <td tabindex="0" class="sorting_1">
-                                                <span class="badge badge-pill badge-danger">Canceled</span>
-                                            </td>
-                                            <td>2018/11/8</td>
-                                            <td>Mocaccino</td>
-                                            <td>2</td>
-                                            <td>udin123</td>
                                         </tr>
                                     </tbody>
                                 </table>

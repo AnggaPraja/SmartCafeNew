@@ -32,7 +32,7 @@ class SiteController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index', 'stok'],
+                        'actions' => ['logout', 'memproses', 'index', 'stok','ajax'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -95,6 +95,11 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    public function actionMemproses()
+    {
+        return $this->render('memproses');
+    }
+
     public function actionStok()
     {
         return $this->render('stok');
@@ -124,6 +129,23 @@ class SiteController extends Controller
                 'model' => $model,
             ]);
         }
+    }
+
+    public function actionAjax(){
+      // $data['data'] = [
+      //   ["&lt;span class='badge badge-pill badge-success'&gt;Completed&lt;&#47;span&gt;"]
+      // ];
+      $data['data'] = [
+        ['<span class="badge badge-pill badge-success">Completed</span>','2018/11/28','Capucinno','3','kaharudin','<a href="#" class="btn btn-link btn-success btn-just-icon like"><i class="material-icons">check_circle_outline</i></a><a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>'],
+        ['<span class="badge badge-pill badge-success">Completed</span>','2018/11/2','Nasi Goreng','1','triambudi','<a href="#" class="btn btn-link btn-success btn-just-icon like"><i class="material-icons">check_circle_outline</i></a><a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>'],
+        ['<span class="badge badge-pill badge-danger">Canceled</span>','2018/11/8','Mocaccino','2','udin123','<a href="#" class="btn btn-link btn-success btn-just-icon like"><i class="material-icons">check_circle_outline</i></a><a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>']
+      ];
+      // $data['data'] = [
+      // 	['&lt;span class="badge badge-pill badge-success"&gt;Completed&lt;&#47;span&gt;','2018/11/28','Capucinno','3','kaharudin','&lt;a href="#" class="btn btn-link btn-success btn-just-icon like"&gt;&lt;i class="material-icons"&gt;check_circle_outline&lt;&#47;i&gt;&lt;&#47;a&gt;&lt;a href="#" class="btn btn-link btn-danger btn-just-icon remove"&gt;&lt;i class="material-icons"&gt;close&lt;&#47;i&gt;&lt;&#47;a&gt;'],
+      // 	['&lt;span class="badge badge-pill badge-success"&gt;Completed&lt;&#47;span&gt;','2018/11/2','Nasi Goreng','1','triambudi','&lt;a href="#" class="btn btn-link btn-success btn-just-icon like"&gt;&lt;i class="material-icons"&gt;check_circle_outline&lt;&#47;i&gt;&lt;&#47;a&gt;&lt;a href="#" class="btn btn-link btn-danger btn-just-icon remove"&gt;&lt;i class="material-icons"&gt;close&lt;&#47;i&gt;&lt;&#47;a&gt;'],
+      // 	['&lt;span class="badge badge-pill badge-danger"&gt;Canceled&lt;&#47;span&gt;','2018/11/8','Mocaccino','2','udin123','&lt;a href="#" class="btn btn-link btn-success btn-just-icon like"&gt;&lt;i class="material-icons"&gt;check_circle_outline&lt;&#47;i&gt;&lt;&#47;a&gt;&lt;a href="#" class="btn btn-link btn-danger btn-just-icon remove"&gt;&lt;i class="material-icons"&gt;close&lt;&#47;i&gt;&lt;&#47;a&gt;']
+      // ];
+      echo json_encode($data);
     }
 
     /**

@@ -26,7 +26,7 @@ $this->title = 'Validasi Pembayaran';
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <table id="datatables" class="table table-striped table-no-bordered table-hover dataTable dtr-inline" cellspacing="0" width="100%"
+                                <table id="tb_validasi_pembayaran" class="table table-striped table-no-bordered table-hover dataTable dtr-inline" cellspacing="0" width="100%"
                                     style="width: 100%;" role="grid" aria-describedby="datatables_info">
                                     <thead>
                                         <tr role="row">
