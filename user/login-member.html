@@ -25,6 +25,30 @@
     <link href="../assets/assets-for-demo/demo.css" rel="stylesheet" />
     <link href="../assets/css/style.css" rel="stylesheet" />
     <link href="../assets/css/responsive.css" rel="stylesheet" />
+    <style>
+        ::placeholder {
+            color: white !important;
+            opacity: 1 !important;
+            font-size: 25px !important;
+            /* Firefox */
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: white !important;
+            font-size: 25px;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: white !important;
+            font-size: 25px;
+        }
+
+        ::-webkit-input-placeholder {
+            font-size: 25px ! important;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,22 +59,55 @@
             <br>
             <h2 class="intro">Silahkan pilih jenis user anda</h2>
             <div class="row" style="margin-top:10%;">
-                <div class="col-md-12 col-sm-12">
-                    <button class="btn btn-linkedin btn-nonmember">
-                        <i class="fa fa-user" style="font-size: 30px;"></i> Non-Member
-                    </button>
+                <div class="col-md-10 col-sm-10 mr-auto ml-auto">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons icon-white">face</i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control form-control-lg" placeholder="First Name...">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:5%;">
+                <div class="col-md-10 col-sm-10 mr-auto ml-auto">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="material-icons icon-white">lock_open</i>
+                            </span>
+                        </div>
+                        <input type="password" class="form-control form-control-lg" placeholder="Password...">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:5%;">
+                <div class="col-md-9 col-sm-9 mr-auto ml-auto">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1" style="color:white;font-size: 20px;">Pilih No. Meja</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
                 </div>
             </div>
             <div class="row" style="margin-top: 5%;">
                 <div class="col-md-12 col-sm-12">
                     <button class="btn btn-reddit btn-member">
-                        <i class="fa fa-user-secret" style="font-size: 30px;"></i> Member
+                        <i class="fa fa-paper-plane" style="font-size: 30px;"></i> Submit
                     </button>
                 </div>
             </div>
-            <h2 class="intro" style="margin-top:20%;">Nikmati diskon member untuk kamu <br> yang sudah menjadi member</h2>
+            <h2 class="intro" style="margin-top:20%;">Nikmati diskon member untuk kamu
+                <br> yang sudah menjadi member</h2>
         </div>
         <div class="gradient"></div>
+
     </div>
 
     <!--   Core JS Files   -->
